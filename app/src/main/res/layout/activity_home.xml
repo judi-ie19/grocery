@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/tvcategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:text="CATEGORY"
+        android:textColor="#A35151"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnfruits"
+        android:layout_width="99dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvcategory"
+        app:srcCompat="@drawable/img" />
+
+    <TextView
+        android:id="@+id/tvfruits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="44dp"
+        android:text="Fruits"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnfruits" />
+
+    <ImageButton
+        android:id="@+id/btnvegetables"
+        android:layout_width="102dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toStartOf="@+id/btnmeat"
+        app:layout_constraintStart_toEndOf="@+id/btnfruits"
+        app:layout_constraintTop_toBottomOf="@+id/tvcategory"
+        app:srcCompat="@drawable/img_1" />
+
+    <TextView
+        android:id="@+id/tvvegetables"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="40dp"
+        android:text="Vegetables"
+        android:textSize="19sp"
+        app:layout_constraintStart_toEndOf="@+id/tvfruits"
+        app:layout_constraintTop_toBottomOf="@+id/btnvegetables" />
+
+    <ImageButton
+        android:id="@+id/btnmeat"
+        android:layout_width="99dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnvegetables"
+        app:layout_constraintTop_toBottomOf="@+id/tvcategory"
+        app:srcCompat="@drawable/img_2" />
+
+    <TextView
+        android:id="@+id/tvmeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="44dp"
+        android:text="Meat"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.353"
+        app:layout_constraintStart_toEndOf="@+id/tvvegetables"
+        app:layout_constraintTop_toBottomOf="@+id/btnmeat" />
+
+    <TextView
+        android:id="@+id/tvpopular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:text="Popular deals"
+        android:textColor="#602D2D"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvvegetables" />
+
+    <SearchView
+        android:layout_width="315dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvcategory" />
+
+    <ImageView
+        android:id="@+id/btnbacon"
+        android:layout_width="161dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnpizza"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvpopular"
+        app:srcCompat="@drawable/img_3" />
+
+    <ImageView
+        android:id="@+id/btnpizza"
+        android:layout_width="150dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toEndOf="@+id/btnbacon"
+        app:layout_constraintTop_toBottomOf="@+id/tvpopular"
+        app:srcCompat="@drawable/img_4" />
+
+    <Button
+        android:id="@+id/btnnext"
+        android:layout_width="80dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:background="#A34242"
+        android:backgroundTint="#A52B2B"
+        android:text="Next"
+        app:cornerRadius="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnbacon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
